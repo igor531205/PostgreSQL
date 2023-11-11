@@ -68,8 +68,7 @@ LIKE условие_фильтрации;
 -- 5. Выведите имена и фамилии тех актёров/актрис, у которых в имени встречается 'en'  
 SELECT first_name, last_name
 FROM actor 
-WHERE first_name LIKE '%en%'
- OR first_name LIKE '_%EN%';
+WHERE first_name ILIKE '_%en%';
 
 /* Информационная справка 
 ORDER BY позволяет упорядочивать данные в результирующем наборе в определенном порядке
